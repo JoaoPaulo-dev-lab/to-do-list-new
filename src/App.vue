@@ -17,8 +17,8 @@
 
 <style scoped>
 img {
-  max-width: 100px;
   /*Ajustando o tamanho da imagem*/
+  max-width: 100px;
   margin: 0 auto;
 }
 </style>
