@@ -17,7 +17,7 @@ export default createStore({
     }
   },
   mutations: {
-    // Funções sincronas
+    // Funções síncronas
     addTarefa(state, payload) {
       state.tarefas.push(payload)
     },
@@ -71,7 +71,7 @@ export default createStore({
       return new Promise((resolve) => {
         setTimeout(() => {
           tarefa.id = Date.now() // Pegando os dados
-          commit('addTarefa', tarefa) // PeGANDO O método 'addTarefa'
+          commit('addTarefa', tarefa) // Pegando O método 'addTarefa'
           commit('setLoading', false)
           resolve(tarefa)
         }, 500)
@@ -82,7 +82,7 @@ export default createStore({
       return new Promise((resolve) => {
         setTimeout(() => {
           observacao.id = Date.now() // Pegando os dados
-          commit('addObservacoes', observacao) // PeGANDO O método 'addObservacoes'
+          commit('addObservacoes', observacao) // Pegando O método 'addObservacoes'
           commit('setLoading', false)
           resolve(observacao)
         }, 500)
