@@ -51,7 +51,7 @@ export default createStore({
         state.observacoes.splice(index, 1)
       }
     },
-    // Concluir todas as tarefas
+    // Conclui todas as tarefas
     toggleLista(state, tarefaId) {
       const tarefas2 = state.tarefas.map((i) => {
         return tarefaId.includes(i.id) ? { ...i, checked: !i.checked } : i
