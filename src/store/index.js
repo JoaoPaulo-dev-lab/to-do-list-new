@@ -8,6 +8,8 @@ export default createStore({
     loading: false
   },
   getters: {
+    /* Recomputará a dependencia atualizada (lembra o 'computed'). 
+       A dependencia atualizada será resgatada em algum componente */
     // Fazendo com que as tarefas 'concluídas' apareçam na janela de tarefas:
     uncheckends(state) {
       return state.tarefas.filter((tarefa) => tarefa.checked === false) // Tarefas não concluídas;
@@ -17,6 +19,8 @@ export default createStore({
     }
   },
   mutations: {
+    // Tudo que eu quero mudar no template eu coloco em 'mutations'
+    // Atualizar um item, objeto, etc.
     // Funções síncronas
     addTarefa(state, payload) {
       state.tarefas.push(payload)
